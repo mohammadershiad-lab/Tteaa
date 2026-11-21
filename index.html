@@ -1,0 +1,359 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>حكاية شاي | عالم الشاي</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Tahoma, Arial, sans-serif;
+  background: #f8f6ef;
+  color: #293c2c;
+  line-height: 1.9;
+}
+
+header {
+  background: #294633;
+  color: white;
+  padding: 22px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 27px;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #d9c89b;
+}
+
+.hero {
+  min-height: 440px;
+  background:
+  linear-gradient(rgba(20,40,25,.45),rgba(20,40,25,.55)),
+  url("https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=1600");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 60px 10%;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 55px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 19px;
+  max-width: 600px;
+}
+
+section {
+  padding: 65px 10%;
+}
+
+.section-title {
+  font-size: 34px;
+  color: #31583c;
+  margin-bottom: 15px;
+}
+
+.intro {
+  font-size: 18px;
+  max-width: 850px;
+}
+
+.tea {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+  margin-top: 55px;
+}
+
+.tea:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.tea img {
+  width: 45%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.tea-info {
+  flex: 1;
+}
+
+.tea-info h3 {
+  font-size: 29px;
+  color: #416b49;
+  margin-bottom: 12px;
+}
+
+.tea-info h4 {
+  margin-top: 12px;
+  color: #6b774c;
+}
+
+.tea-info p {
+  font-size: 16px;
+}
+
+.facts {
+  background: #e9eadb;
+}
+
+.facts p {
+  margin: 12px 0;
+  font-size: 17px;
+}
+
+.websites {
+  background: #f1eee3;
+}
+
+.websites a {
+  display: inline-block;
+  color: #31583c;
+  font-weight: bold;
+  margin: 12px 20px 12px 0;
+}
+
+.videos {
+  text-align: center;
+}
+
+.video {
+  max-width: 850px;
+  margin: 40px auto;
+  text-align: right;
+}
+
+.video h3 {
+  font-size: 22px;
+  color: #31583c;
+  margin-bottom: 12px;
+}
+
+.video iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
+}
+
+footer {
+  background: #294633;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+@media(max-width:750px) {
+  header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  nav a {
+    margin: 5px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  section {
+    padding: 45px 7%;
+  }
+
+  .tea,
+  .tea:nth-child(even) {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .tea img {
+    width: 100%;
+    height: 240px;
+  }
+
+  .video iframe {
+    height: 230px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">🍃 حكاية شاي</div>
+  <nav>
+    <a href="#home">الرئيسية</a>
+    <a href="#about">عن الشاي</a>
+    <a href="#types">أنواع الشاي</a>
+    <a href="#facts">معلومات</a>
+    <a href="#websites">مواقع</a>
+    <a href="#videos">فيديوهات</a>
+  </nav>
+</header>
+
+<div class="hero" id="home">
+  <div>
+    <h1>عالم الشاي</h1>
+    <p>رحلة بين النكهات والألوان، نتعرف فيها على أنواع الشاي وفوائده واستخداماته حول العالم.</p>
+  </div>
+</div>
+
+<section id="about">
+  <h2 class="section-title">ما هو الشاي؟</h2>
+  <p class="intro">
+    الشاي من أشهر المشروبات في العالم، ويُحضّر من أوراق نبات الكاميليا الصينية.
+    تختلف أنواع الشاي بحسب طريقة معالجة الأوراق ودرجة أكسدتها، وهذا ما يمنح كل نوع
+    لونه وطعمه ورائحته المميزة.
+  </p>
+</section>
+
+<section id="types">
+  <h2 class="section-title">أنواع الشاي</h2>
+  <p class="intro">لكل نوع من الشاي نكهة مختلفة وطريقة تحضير واستخدامات مميزة.</p>
+
+  <div class="tea">
+    <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=900" alt="الشاي الأخضر">
+    <div class="tea-info">
+      <h3>الشاي الأخضر</h3>
+      <p>
+        يُحضّر من أوراق الشاي التي لا تتعرض لأكسدة كبيرة، ويتميز بلونه الأخضر
+        ونكهته الخفيفة والمنعشة.
+      </p>
+      <h4>فوائده</h4>
+      <p>يحتوي على مضادات أكسدة، وقد يساهم ضمن نظام غذائي متوازن في دعم صحة الجسم.</p>
+      <h4>استخداماته</h4>
+      <p>يُشرب ساخنًا أو باردًا، ويُستخدم أحيانًا في بعض وصفات الحلويات.</p>
+    </div>
+  </div>
+
+  <div class="tea">
+    <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=900" alt="الشاي الأسود">
+    <div class="tea-info">
+      <h3>الشاي الأسود</h3>
+      <p>
+        من أكثر أنواع الشاي انتشارًا، ويتميز بلونه الداكن ونكهته القوية،
+        وينتج عن تعرض أوراقه للأكسدة بشكل كامل تقريبًا.
+      </p>
+      <h4>فوائده</h4>
+      <p>يحتوي على مركبات نباتية مضادة للأكسدة، كما يحتوي على الكافيين الذي يساعد على اليقظة.</p>
+      <h4>استخداماته</h4>
+      <p>يُستخدم كمشروب صباحي، ويمكن تقديمه مع الحليب أو الليمون أو النعناع.</p>
+    </div>
+  </div>
+
+  <div class="tea">
+    <img src="https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=900" alt="الشاي الأبيض">
+    <div class="tea-info">
+      <h3>الشاي الأبيض</h3>
+      <p>
+        يُصنع من براعم وأوراق نبات الشاي الصغيرة، ويتميز بطعمه الناعم
+        ولونه الفاتح وطريقة معالجته البسيطة.
+      </p>
+      <h4>فوائده</h4>
+      <p>يحتوي على مضادات أكسدة، وتختلف كمية الكافيين فيه حسب طريقة التحضير.</p>
+      <h4>استخداماته</h4>
+      <p>يُشرب ساخنًا للاستمتاع بنكهته الخفيفة، ويفضل تحضيره بماء غير شديد الغليان.</p>
+    </div>
+  </div>
+
+  <div class="tea">
+    <img src="https://images.unsplash.com/photo-1597318181409-cf64d0b5d8a2?w=900" alt="شاي الأعشاب">
+    <div class="tea-info">
+      <h3>شاي الأعشاب</h3>
+      <p>
+        يختلف عن الشاي التقليدي؛ إذ يُحضّر من نباتات وأزهار وأعشاب
+        مثل البابونج والنعناع والكركديه.
+      </p>
+      <h4>فوائده</h4>
+      <p>تختلف فوائده حسب نوع النبات المستخدم، وبعض الأنواع تساعد على الاسترخاء.</p>
+      <h4>استخداماته</h4>
+      <p>يُشرب بعد الوجبات أو في المساء، ويمكن تقديمه ساخنًا أو باردًا.</p>
+    </div>
+  </div>
+</section>
+
+<section class="facts" id="facts">
+  <h2 class="section-title">هل تعلم؟</h2>
+  <p>🍃 يعود أصل نبات الشاي إلى مناطق في آسيا.</p>
+  <p>🍃 يُعد الشاي من أكثر المشروبات استهلاكًا حول العالم بعد الماء.</p>
+  <p>🍃 تختلف نكهة الشاي حسب نوع الأوراق ووقت نقعها ودرجة حرارة الماء.</p>
+  <p>🍃 الشاي الأخضر والأسود والأبيض تأتي جميعها من النبات نفسه.</p>
+  <p>🍃 شاي الأعشاب لا يُصنع بالضرورة من نبات الشاي الأصلي.</p>
+</section>
+
+<section class="websites" id="websites">
+  <h2 class="section-title">اكتشف المزيد عن الشاي</h2>
+  <p>يمكنك زيارة هذه المواقع للتعرف على أنواع الشاي وطرق تحضيره ومعلومات إضافية:</p>
+
+  <p><a href="https://www.teasource.com/" target="_blank">TeaSource – أنواع الشاي</a></p>
+  <p><a href="https://nutritionsource.hsph.harvard.edu/food-features/tea/" target="_blank">Harvard – معلومات عن الشاي</a></p>
+  <p><a href="https://www.teatulia.com/" target="_blank">TeaTulia – عالم الشاي</a></p>
+  <p><a href="https://www.octaviatea.com/" target="_blank">Octavia Tea – أنواع ونكهات الشاي</a></p>
+</section>
+
+<section class="videos" id="videos">
+  <h2 class="section-title">شاهد وتعلّم</h2>
+  <p>فيديوهات تساعدك على اكتشاف أنواع الشاي والاختلاف بينها.</p>
+
+  <div class="video">
+    <h3>أنواع الشاي المختلفة</h3>
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/rAdn00wQ_vI"
+      title="أنواع الشاي"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class="video">
+    <h3>التعرف على أنواع الشاي</h3>
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/Caq0AMr3f_s"
+      title="التعرف على الشاي"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <p>
+    <a href="https://www.youtube.com/results?search_query=types+of+tea+explained"
+       target="_blank">
+       اضغط هنا لمشاهدة المزيد من فيديوهات الشاي على يوتيوب
+    </a>
+  </p>
+</section>
+
+<footer>
+  <p>🍃 حكاية شاي | رحلة في عالم النكهات 🍃</p>
+  <p> اعداد jana bial </p>
+  <p> جميع الحقوق محفوظه </p>
+</footer>
+
+</body>
+</html>
